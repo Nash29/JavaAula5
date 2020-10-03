@@ -1,11 +1,12 @@
 
+// ARQUIVO PRINCIPAL
 import javax.swing.JOptionPane;
-
 
 public class main {
     
     public static void main(String[] args) {
         
+        //A primeira tabela que ira aparecer
         String menu = "*** Escolha uma opção"
                 + "\n1 - Exercicio 1"
                 + "\n2 - Exemplo 2"
@@ -15,8 +16,10 @@ public class main {
                 + "\n6 - Exemplo 6"
                 + "\n7 - Exemplo 7";
         
+        //opcao vai recer a escolha
         int opcao = Integer.parseInt(JOptionPane.showInputDialog(menu));
         
+        // dependendo da escolha o java manda para outra pasta
         switch (opcao) {
             case 1:
                 Exercicio1.main(args);
